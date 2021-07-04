@@ -1,0 +1,75 @@
+{
+    "img": "starbucks_01.jpg",
+    "texts": [
+        {
+            "locale": "en",
+            "description": "STARBUCKS COFFEE\n",
+            "boundingPoly": {
+                "vertices": [
+                    {
+                        "x": 39,
+                        "y": 26
+                    },
+                    {
+                        "x": 243,
+                        "y": 26
+                    },
+                    {
+                        "x": 243,
+                        "y": 40
+                    },
+                    {
+                        "x": 39,
+                        "y": 40
+                    }
+                ]
+            }
+        },
+        {
+            "description": "STARBUCKS",
+            "boundingPoly": {
+                "vertices": [
+                    {
+                        "x": 39,
+                        "y": 27
+                    },
+                    {
+                        "x": 159,
+                        "y": 26
+                    },
+                    {
+                        "x": 159,
+                        "y": 39
+                    },
+                    {
+                        "x": 39,
+                        "y": 40
+                    }
+                ]
+            }
+        },
+        {
+            "description": "COFFEE",
+            "boundingPoly": {
+                "vertices": [
+                    {
+                        "x": 168,
+                        "y": 27
+                    },
+                    {
+                        "x": 243,
+                        "y": 26
+                    },
+                    {
+                        "x": 243,
+                        "y": 38
+                    },
+                    {
+                        "x": 168,
+                        "y": 39
+                    }
+                ]
+            }
+        }
+    ]
+}

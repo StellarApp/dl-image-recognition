@@ -1,0 +1,65 @@
+{
+    "img": "starbucks_01.jpg",
+    "labels": [
+        {
+            "mid": "/m/01x314",
+            "description": "Facade",
+            "score": 0.7825062,
+            "topicality": 0.7825062
+        },
+        {
+            "mid": "/m/0191_7",
+            "description": "Retail",
+            "score": 0.78126436,
+            "topicality": 0.78126436
+        },
+        {
+            "mid": "/m/07br0",
+            "description": "Trade",
+            "score": 0.74024975,
+            "topicality": 0.74024975
+        },
+        {
+            "mid": "/m/01mzpv",
+            "description": "Chair",
+            "score": 0.736945,
+            "topicality": 0.736945
+        },
+        {
+            "mid": "/m/0bkqqh",
+            "description": "Signage",
+            "score": 0.65698916,
+            "topicality": 0.65698916
+        },
+        {
+            "mid": "/m/081pkj",
+            "description": "Event",
+            "score": 0.64778894,
+            "topicality": 0.64778894
+        },
+        {
+            "mid": "/m/0dwx7",
+            "description": "Logo",
+            "score": 0.63427335,
+            "topicality": 0.63427335
+        },
+        {
+            "mid": "/m/03gq5hm",
+            "description": "Font",
+            "score": 0.5943698,
+            "topicality": 0.5943698
+        },
+        {
+            "mid": "/m/02dgv",
+            "description": "Door",
+            "score": 0.58025885,
+            "topicality": 0.58025885
+        },
+        {
+            "mid": "/m/011s0",
+            "description": "Advertising",
+            "score": 0.57658845,
+            "topicality": 0.57658845
+        }
+    ]
+}
