@@ -1,8 +1,10 @@
-<h1> Re-design store signs </h1>
+{% extends 'header.html' %}
 
-<!--{% for message in get_flashed_messages() %}-->
-<!--<h2>{{ message }}</h2>-->
-<!--{% endfor %}-->
+{% block title %}Re-design store sign{% endblock %}
+
+{% block main %}
+
+<h1> Re-design store signs </h1>
 
 <form action="uploaded-photo" method="post" enctype="multipart/form-data">
     <label for="photo">Store sign photo</label>
@@ -25,3 +27,5 @@
     {% endfor %}
 </ul>
 {% endif %}
+
+{% endblock %}
