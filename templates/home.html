@@ -1,18 +1,27 @@
 <h1> Re-design store signs </h1>
 
-{% for message in get_flashed_messages() %}
-<h2>{{ message }}</h2>
-{% endfor %}
-<form action="uploaded-photo" method="post">
+<!--{% for message in get_flashed_messages() %}-->
+<!--<h2>{{ message }}</h2>-->
+<!--{% endfor %}-->
+
+<form action="uploaded-photo" method="post" enctype="multipart/form-data">
     <label for="photo">Store sign photo</label>
-    <input type="text" name="photo" required>
+    <input type="file" name="photo" value="" required>
     <br>
     <label for="letter">Enter the letters </label>
-    <input type="text" name="letter" required>
+    <input type="text" name="letter" value=""required>
     <br>
     <label for="letter-color">Select the color</label>
-    <input type="text" name="letter-color" required>
+    <input type="text" name="letterColor" value="" required>
     <br>
     <input type="submit" value="process">
-
 </form>
+
+{% if photos %}
+<h2>Photos you have uploaded</h2>
+<ul>
+    {% for item in photos %}
+    <li>{{ item['photo']}}</li>
+    {% endfor %}
+</ul>
+{% endif %}
