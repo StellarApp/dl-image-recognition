@@ -15,7 +15,7 @@ print(__name__)
 
 @app.route("/")
 def home():
-    if 'user1' in session:
+    if 'user1' in session.keys():
         res = session['user1']
         return render_template('home.html', photos=res)
     else:
@@ -76,5 +76,9 @@ def page_not_found(error):
 
 @app.route('/api/user1/photos')
 def fetch_all():
-    res = session['user1']
-    return jsonify(res)
+    if 'user1' in session.keys():
+        res = session['user1']
+        return jsonify(res)
+    else:
+        flash('There is no data in the api. Please add an image')
+        return redirect(url_for('home'))
