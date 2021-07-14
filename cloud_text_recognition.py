@@ -1,6 +1,4 @@
 from base64 import b64encode
-from pathlib import Path
-import json
 import googleapiclient.discovery
 from oauth2client.client import GoogleCredentials
 

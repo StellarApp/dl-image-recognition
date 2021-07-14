@@ -1,0 +1,18 @@
+<h1> Re-design store signs </h1>
+
+{% for message in get_flashed_messages() %}
+<h2>{{ message }}</h2>
+{% endfor %}
+<form action="uploaded-photo" method="post">
+    <label for="photo">Store sign photo</label>
+    <input type="text" name="photo" required>
+    <br>
+    <label for="letter">Enter the letters </label>
+    <input type="text" name="letter" required>
+    <br>
+    <label for="letter-color">Select the color</label>
+    <input type="text" name="letter-color" required>
+    <br>
+    <input type="submit" value="process">
+
+</form>
