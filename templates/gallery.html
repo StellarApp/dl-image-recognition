@@ -1,19 +1,27 @@
 {% extends 'header.html' %}
 
-{% block title %}Page Not Found{% endblock %}
+{% block title %}Gallery{% endblock %}
 
 {% block main %}
 
-<h1>Uploaded images</h1>
-  {% if photos %}
-  <ul>
-    {% for item in photos %}
-    <a href="{{ url_for('static', filename='user_files/' + item['photo']) }}">
-      <li>{{ item['photo'] }}</li>
-    </a>
-    {% endfor %}
-  </ul>
-  {% endif %}
+<div class="container">
+  <h2>Uploaded images</h2>
+    {% if photos %}
+  <p> Collection of uploaded and processed images</p>
+   <div class="row">
+      {% for item in photos %}
+     <div class="col-md-4">
+        <div class="thumbnail">
+        <a href="{{ url_for('static', filename='user_files/' + item['photo']) }}" target="_blank">
+          <div class="caption">{{ item['photo'] }}</div>
+          <img src="{{ url_for('static', filename='user_files/' + item['photo']) }}" class="img-thumbnail" alt="{{item['photo']}}" alt="Lights" style="width:100%">
+        </a>
+        </div>
+     </div>
+      {% endfor %}
+   </div>
+    {% endif %}
+  </div>
 </div>
 
 {% endblock %}
