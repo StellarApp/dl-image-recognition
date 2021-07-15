@@ -1,0 +1,19 @@
+{% extends 'header.html' %}
+
+{% block title %}Page Not Found{% endblock %}
+
+{% block main %}
+
+<h1>Uploaded images</h1>
+  {% if photos %}
+  <ul>
+    {% for item in photos %}
+    <a href="{{ url_for('static', filename='user_files/' + item['photo']) }}">
+      <li>{{ item['photo'] }}</li>
+    </a>
+    {% endfor %}
+  </ul>
+  {% endif %}
+</div>
+
+{% endblock %}

@@ -66,7 +66,7 @@ def redirect_to_url(photo):
     if os.path.exists('photos.json'):
         with open('photos.json') as photo_file:
             photos = json.load(photo_file)['user1']
-            return render_template('home.html', photos=photos)
+            return render_template('gallery.html', photos=photos)
 
 
 @app.errorhandler(404)
