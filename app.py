@@ -61,17 +61,14 @@ def uploaded_photo():
         return redirect(url_for('home'))
 
 
-@app.route('/<string:photo>')
-def redirect_to_url(photo):
+# @app.route('/<string:photo>')
+
+@app.route('/gallery')
+def gallery():
     if os.path.exists('photos.json'):
         with open('photos.json') as photo_file:
             photos = json.load(photo_file)['user1']
             return render_template('gallery.html', photos=photos)
-
-
-@app.errorhandler(404)
-def page_not_found(error):
-    return render_template('page_not_found.html'), 404
 
 
 @app.route('/api/user1/photos')
@@ -82,3 +79,8 @@ def fetch_all():
     else:
         flash('There is no data in the api. Please add an image')
         return redirect(url_for('home'))
+
+
+@app.errorhandler(404)
+def page_not_found(error):
+    return render_template('page_not_found.html'), 404
